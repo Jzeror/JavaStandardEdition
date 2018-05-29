@@ -15,10 +15,8 @@ public class HowMuch{
 		System.out.println("몇 퍼센트 DC 해드릴까요?");
 		double dsc=scan.nextInt();
 		double fin=sum1*(1-dsc/100);
-		String g="";
-		if(dsc>10){
-		g="안 팔아요.";
-		}else{
+		String g="안 팔아요.";
+		if(dsc<=10){
 		g=fin+" 원 입니다.";
 		}
 		System.out.println(g);
